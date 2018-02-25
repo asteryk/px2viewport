@@ -1,0 +1,24 @@
+{
+  "name": "px2viewport",
+  "version": "1.0.0",
+  "description": "a webpack loader for transfer css px to vw vm ",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asteryk/px2viewport.git"
+  },
+  "keywords": [
+    "loader",
+    "css",
+    "px2vw"
+  ],
+  "author": "asteryk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asteryk/px2viewport/issues"
+  },
+  "homepage": "https://github.com/asteryk/px2viewport#readme"
+}
