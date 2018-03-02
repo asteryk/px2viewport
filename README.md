@@ -27,5 +27,6 @@ var opts = {
 	minPixelValue: 1, //最小不需要转换的值：1px min pixel not need transfer
 	precision: 5 //最大支持小数位数 precision
 };
+require("css!px2viewport?"+JSON.stringify(opts)+"!./test.css")
 
 ```

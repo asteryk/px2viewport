@@ -5,6 +5,7 @@
  * */ 
 // 用来拷贝配置项
 var objectAssign = require('object-assign');
+var loaderUtils = require('loader-utils');
 // 默认配置项
 var defaults = {
 	viewportWidth: 750, //设计稿宽度
@@ -52,11 +53,13 @@ function toFixed(number, precision) {
 	return Math.round(wholeNumber / 10) * 10 / multiplier;
 }
 // 模块本身方法
-module.exports = function (content, options) {
+module.exports = function (content) {
 	// 缓存
 	this.cacheable();
 	// 异步输出
 	var callback = this.async();
+	// 接受参数
+	var options = loaderUtils.parseQuery(this.query);
 	// 更新自定义配置
 	var opts = objectAssign({}, defaults, options);
 	// 过滤无px的情况

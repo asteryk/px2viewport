@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/asteryk/px2viewport/issues"
   },
-  "homepage": "https://github.com/asteryk/px2viewport#readme"
+  "homepage": "https://github.com/asteryk/px2viewport#readme",
+  "dependencies": {
+    "loader-utils": "^1.1.0",
+    "object-assign": "^4.1.1"
+  }
 }
