@@ -62,8 +62,6 @@ module.exports = function (content) {
 	var options = loaderUtils.parseQuery(this.query);
 	// 更新自定义配置
 	var opts = objectAssign({}, defaults, options);
-	// 过滤无px的情况
-	if (content.indexOf('px') === -1) return;
 	// 异步输出结果
 	callback(null, px2vw(content, opts));
 }

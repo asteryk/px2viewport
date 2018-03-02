@@ -1,6 +1,6 @@
 {
   "name": "px2viewport",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a webpack loader for transfer css px to vw vm ",
   "main": "index.js",
   "scripts": {
